@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import request
 app = Flask(__name__)
 
 @app.route('/')
@@ -8,3 +9,10 @@ def index():
 @app.route('/hello')
 def hello(): 
   return 'Hello, World'
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+  if request.method == 'POST':
+    return 'You used a POST request'
+  else:
+    return 'you did not use a POST request'
