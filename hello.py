@@ -1,6 +1,15 @@
 from flask import Flask
 from flask import request
-app = Flask(__name__)
+
+def create_app():
+  """
+  Creates the application. This is useful for testing.
+  """
+
+  app = Flask(__name__)
+  return app
+
+app = create_app()
 
 @app.route('/')
 def index():
