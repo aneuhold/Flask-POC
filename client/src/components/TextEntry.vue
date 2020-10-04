@@ -7,7 +7,7 @@
 <script>
 export default {
   name: 'TextEntry',
-}
+};
 </script>
 
 <style scoped>
