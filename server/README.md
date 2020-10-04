@@ -10,6 +10,7 @@ rm get-pip.py
 pip install Flask
 export FLASK_APP=server.py
 pip install Flask-CORS
+pip install pytest
 ```
 
 To startup the development environment, use the following commands:
