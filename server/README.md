@@ -1,5 +1,17 @@
 # Development
 
+To build the environment for the first time you can use
+
+```
+. venv/bin/activate
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py
+rm get-pip.py
+pip install Flask
+export FLASK_APP=server.py
+pip install Flask-CORS
+```
+
 To startup the development environment, use the following commands:
 
 ```
