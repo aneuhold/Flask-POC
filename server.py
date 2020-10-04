@@ -1,20 +1,6 @@
-from flask import Flask
-from flask import request
+from flask import Flask, request
 
-
-def create_app(config_filename=None):
-    """
-    Creates the application. This is useful for testing.
-    """
-    app = Flask(__name__)
-
-    if config_filename is not None:
-        app.config.from_pyfile(config_filename)
-
-    return app
-
-
-app = create_app()
+app = Flask(__name__)
 
 
 @app.route('/')
