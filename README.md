@@ -11,3 +11,9 @@ To start the flask server use
 ```
 flask run
 ```
+
+To exit the development environment use
+
+```
+deactivate
+```
